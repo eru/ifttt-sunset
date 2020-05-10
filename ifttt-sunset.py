@@ -39,7 +39,7 @@ if args.add:
 
 now = datetime.now(timezone.utc)
 
-if now <= sunset:
+if now < sunset:
     # Do nothing
     exit(0)
 
